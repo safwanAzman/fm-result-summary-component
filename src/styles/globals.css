@@ -1,0 +1,125 @@
+@font-face {
+  font-family: HankenGroteskBold;
+  src: url('../assets/fonts/HankenGrotesk-Bold.ttf');
+}
+
+@font-face {
+  font-family: HankenGroteskExtraBold;
+  src: url('../assets/fonts/HankenGrotesk-ExtraBold.ttf');
+}
+
+
+@font-face {
+  font-family: HankenGroteskMedium;
+  src: url('../assets/fonts/HankenGrotesk-Medium.ttf');
+}
+
+@font-face {
+  font-family: HankenGroteskDefault;
+  src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+.myFontBold{
+  font-family: HankenGroteskBold;
+}
+.myFontExtraBold{
+  font-family: HankenGroteskExtraBold;
+}
+.myFontMedium{
+  font-family: HankenGroteskMedium;
+}
+.myFontDefault{
+  font-family: HankenGroteskMedium;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-main{
+  @apply 
+    h-screen 
+    bg-neutral-paleBlue 
+    flex 
+    flex-col 
+    lg:items-center 
+    lg:justify-center 
+    justify-start;
+}
+
+.container-main-sub{
+  @apply 
+  bg-white
+  rounded-[2.5rem] 
+  shadow-2xl;
+}
+
+.container-sub{
+  @apply 
+    grid 
+    grid-cols-1 
+    lg:grid-cols-2 
+    lg:w-[50rem] 
+    lg:h-[35rem]
+    w-full 
+    h-full;
+}
+
+.container-parent-left{
+  @apply 
+    bg-gradient-to-b 
+    from-gradient-lightSlateBlue 
+    to-gradient-lightRoyalBlue 
+    px-14 
+    py-4 
+    rounded-[2.5rem] 
+    rounded-t-none 
+    lg:rounded-t-[2.5rem] 
+    flex 
+    flex-col 
+    justify-center 
+    items-center 
+    text-center 
+    space-y-6
+    /* lg:pb-0 */
+    pb-16
+}
+
+.container-parent-right{
+  @apply 
+  bg-white 
+  rounded-r-[1.5rem] 
+  px-10 
+  py-4 
+  flex 
+  flex-col 
+  mt-3
+}
+
+.container-circle{
+    @apply
+    bg-gradient-to-b 
+    from-gradient-violetBlueCircle 
+    to-gradient-persianBlueCircle 
+    rounded-full 
+    w-52 
+    h-52 
+    flex 
+    flex-col 
+    items-center 
+    justify-center
+}
+.button-submit{
+  @apply 
+  bg-neutral-darkGrayBlue 
+  hover:bg-gradient-to-b 
+  from-gradient-lightSlateBlue 
+  to-gradient-lightRoyalBlue  
+  text-white 
+  font-bold 
+  py-4 
+  px-4 
+  rounded-full 
+  mt-10
+}
